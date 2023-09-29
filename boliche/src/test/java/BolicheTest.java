@@ -1,10 +1,8 @@
 
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
 import org.junit.Test;
-
 import br.unipar.si.tdd.boliche.Boliche;
 
 public class BolicheTest {
@@ -33,7 +31,6 @@ public class BolicheTest {
             boliche.newPlayer("Player 1");
         });
     }
-
 
     @Test
     public void mustThrowExceptionWhenPlayerRollsBeforeGameStarts() {
@@ -106,7 +103,6 @@ public class BolicheTest {
         assertEquals(24, boliche.getScore("Player 1"));
     }
 
-
     @Test
     public void mustCalculateScoreForStrikeMultiplayer() {
         Boliche boliche = new Boliche();
@@ -160,7 +156,6 @@ public class BolicheTest {
 
         boliche.roll("Player 1", 1);
         boliche.roll("Player 1", 0);
-
 
         boliche.roll("Player 2", 9);
         boliche.roll("Player 2", 0);

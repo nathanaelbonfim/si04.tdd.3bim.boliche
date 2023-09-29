@@ -33,7 +33,6 @@ public class Player {
 
         if (isSpare)
             hasSpare = true;
-        
 
         boolean isLastRollInFrame = roll == Boliche.MAX_ROLLS;
         if (isLastRollInFrame) {
